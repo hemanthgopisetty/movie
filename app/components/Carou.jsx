@@ -13,7 +13,7 @@ const Carou = ({title,movies,key}) => {
     setOption(prev=>!prev);
   }
   return (
-    <div className=" h-[355px] w-full mt-8 mb-20" ey={key}>
+    <div className=" h-[355px] w-full mt-8 mb-20" key={key}>
      <div className="flex justify-between w-full">
      <p className="text-2xl mx-2 px-2 text-white/80">{title}</p>
      <div className="rounded-lg">
