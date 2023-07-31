@@ -15,7 +15,7 @@ const page = async ({searchParams}) => {
       <div className="grid grid-cols-4 grid-flow-row-dense gap-8 my-28">
       {data?.length===0?<p>Sorry</p>:data.map((e)=>{
         return( 
-         <div>
+         <div key={e.id}>
             <div className="w-[200px] h-[300px] relative">
               <Image 
                src={`${baseURL}${e.poster_path}`}

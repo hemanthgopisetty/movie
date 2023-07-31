@@ -7,13 +7,13 @@ import Link from "next/link"
 import { FcNext,FcPrevious } from "react-icons/fc";
 import { useState } from "react";
 
-const Carou = ({title,movies}) => {
+const Carou = ({title,movies,key}) => {
   const [option,setOption] = useState(false);
   const optionHandler = ()=>{
     setOption(prev=>!prev);
   }
   return (
-    <div className=" h-[355px] w-full mt-8 mb-20">
+    <div className=" h-[355px] w-full mt-8 mb-20" ey={key}>
      <div className="flex justify-between w-full">
      <p className="text-2xl mx-2 px-2 text-white/80">{title}</p>
      <div className="rounded-lg">

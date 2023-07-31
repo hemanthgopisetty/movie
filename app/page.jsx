@@ -38,9 +38,9 @@ export default async function Home() {
     <Banner bgimg={bgimg}/>
      <div className="text-white mx-32 p-4 ">
        <Suspense >
-        <Carou title={'Now Playing'} movies={now_playing}/>
-        <Carou title={'Whats Popular'} movies={popular}/>
-        <Carou title={'Top Rated'} movies={top_rated}/>
+        <Carou title={'Now Playing'} movies={now_playing} key={1}/>
+        <Carou title={'Whats Popular'} movies={popular} key={2}/>
+        <Carou title={'Top Rated'} movies={top_rated} key={3}/>
        </Suspense>
      </div>
     </>
