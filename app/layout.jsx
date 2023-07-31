@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body 
-        className='min-h-screen bg-slate-900 scroll'
+        className='min-h-screen w-full bg-slate-900 no-scrollbar'
       >
           <Header />
           {children}

@@ -9,7 +9,7 @@ const Indicator = () => {
          height={130}
          variant="rectangular"
          sx={{
-            bgcolor:'silver.400', 
+            bgcolor:'#C0C0C0', 
             borderRadius : '35px'
         }}  
          />
@@ -19,6 +19,7 @@ const Indicator = () => {
         <Skeleton 
          variant="text"
          sx={{
+            bgcolor:'#C0C0C0', 
             fontSize : '1rem'
          }}
         />
@@ -27,18 +28,21 @@ const Indicator = () => {
         <Skeleton 
          variant="text"
          sx={{
+            bgcolor:'#C0C0C0', 
             fontSize : '1rem'
          }}
         />
         <Skeleton 
          variant="text"
          sx={{
+            bgcolor:'#C0C0C0', 
             fontSize : '1rem'
          }}
         />
         <Skeleton 
          variant="text"
          sx={{
+            bgcolor:'#C0C0C0', 
             fontSize : '1rem'
          }}
         />
