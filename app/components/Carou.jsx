@@ -13,7 +13,7 @@ const Carou = ({title,movies,key}) => {
     setOption(prev=>!prev);
   }
   return (
-    <div className=" h-[355px] w-full mt-8 mb-20" key={key}>
+    <div className=" h-[355px] w-full mt-8 mb-20" >
      <div className="flex justify-between w-full">
      <p className="text-2xl mx-2 px-2 text-white/80">{title}</p>
      <div className="rounded-lg">
@@ -58,10 +58,9 @@ const Carou = ({title,movies,key}) => {
        >
        {movies.map((e)=>{
         return(
-            <Carousel.Slide>
+            <Carousel.Slide  key={e.id}>
               <div 
                 className="pt-2 flex flex-col gap-2 m-2"
-                key={e.id}
               >
 
               <Link href={'search'}>
