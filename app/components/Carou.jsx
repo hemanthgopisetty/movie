@@ -61,6 +61,7 @@ const Carou = ({title,movies}) => {
             <Carousel.Slide>
               <div 
                 className="pt-2 flex flex-col gap-2 m-2"
+                key={e.id}
               >
 
               <Link href={'search'}>
