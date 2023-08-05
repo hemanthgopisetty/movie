@@ -1,5 +1,4 @@
 'use client'
-import Link from "next/link";
 import { useRouter } from 'next/navigation'
 import { useState } from "react";
 const InputHome = () => {
@@ -20,12 +19,12 @@ const InputHome = () => {
     <input 
           type="text" 
           value={search}
-          placeholder='Movies /TV Shows /Genre'
+          placeholder='Movies /TV Shows'
           onChange={handleInput}
-          className='rounded-l-lg  w-[30rem] px-6 py-2 text-black outline-none'
+          className='rounded-l-full h-14 w-[40rem] px-6 py-2 text-black outline-none'
     />
     <button 
-      className="bg-red-500 px-6 py-2 rounded-r-md"
+      className="bg-red-500 px-6 py-2 rounded-r-full h-14"
       onClick={handleButtonClick}
     >
       Search

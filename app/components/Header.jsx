@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 const Header = () => {
   return (
-    <header className='text-xl text-white fixed flex items-center justify-between h-[60px] w-full z-10 backdrop-blur-[4px]'>
+    <header className='text-xl text-white fixed flex items-center justify-between h-[60px] w-full z-10 backdrop-blur-[4px] bg-black/5'>
           <nav className='w-full px-[20px] flex items-center justify-between '>
             <li className='list-none'>
                 <Link href={'/'}>

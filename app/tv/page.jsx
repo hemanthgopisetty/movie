@@ -9,3 +9,8 @@ const page = () => {
 }
 
 export default page
+
+/**
+ * Need to add infinite scroll
+ * 
+ */
