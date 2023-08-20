@@ -2,7 +2,7 @@ import { options } from "../constants/Options";
 import { url } from "../constants/URLS";
 export async function getMovie()
 {
-  const url1 = url['Now Playing'].movie.route();
+  const url1 = url["What's Popular"].movie.route();
   const url2 = url['Now Playing'].movie.route();
   const url3 = url['Up Coming'].movie.route();
   const url4 = url['Top Rated'].movie.route();
@@ -12,7 +12,7 @@ export async function getMovie()
 
   const popularm     =await response[0].json();
   const now_playingm =await response[1].json();
-  const up_comingm   =await  response[2].json();
+  const up_comingm   =await response[2].json();
   const top_ratedm   =await response[3].json();
 
    return {
@@ -24,7 +24,7 @@ export async function getMovie()
 }
 export async function getTV()
 {
-  const url1 = url['Now Playing'].tv.route();
+  const url1 = url["What's Popular"].tv.route();
   const url2 = url['Now Playing'].tv.route();
   const url3 = url['Up Coming'].tv.route();
   const url4 = url['Top Rated'].tv.route();

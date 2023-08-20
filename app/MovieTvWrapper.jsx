@@ -1,3 +1,4 @@
+import { nanoid } from 'nanoid';
 import { getMovie,getTV } from './QueryFN/getMoviesTv';
 import Carou from './components/Carou';
 
@@ -11,25 +12,25 @@ const MovieTvWrapper = async () => {
           title={"What's Popular"}
           datam={popularm}
           datat={populart}
-          key={1}
+          key={nanoid()}
           />
           <Carou 
           title={'Up Coming'} 
           datam={up_comingm}
           datat={up_comingt}
-          key={2}
+          key={nanoid()}
           />
           <Carou 
           title={'Now Playing'} 
           datam={now_playingm}
           datat={now_playingt}
-          key={3}
+          key={nanoid()}
           />
           <Carou 
           title={'Top Rated'}
           datam={top_ratedm} 
           datat={top_ratedt}
-          key={4}
+          key={nanoid()}
           />
 
     </div>

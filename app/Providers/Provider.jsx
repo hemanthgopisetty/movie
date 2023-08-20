@@ -6,8 +6,9 @@ import { useState } from "react"
 export default function Providers({children})
 {
     const [client] = useState(()=>new QueryClient())
+
     return(
-        <QueryClientProvider    client={client}>
+        <QueryClientProvider client={client}>
             {children}
         </QueryClientProvider>
     )

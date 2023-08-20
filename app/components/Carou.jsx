@@ -1,14 +1,13 @@
 'use client'
-import { useQuery } from "@tanstack/react-query";
-import { getMovie,getTV } from "../QueryFN/getMoviesTv";
 import { useState } from "react";
 import dynamic from "next/dynamic";
 import Indicator from "./Indicator";
 import ButtonCarousel from "./ButtonCarousel";
+
 const CarouseComp = dynamic(()=>import('./CarouseComp'),
   {
    ssr:false,
-   loading : ()=><Indicator />
+   loading : ()=><Indicator/>
   }
 )
 
@@ -18,23 +17,6 @@ const Carou = ({title,datam,datat,key}) => {
     "tv"    : false
   });
 
-  const {data:movies}= useQuery(
-       {
-        queryKey : ['tv'],
-        queryFn  : getMovie,
-        initialData:datam,
-        refetchOnWindowFocus : false
-       }
-    )
-    
-  const {data:tv}= useQuery(
-      {
-       queryKey : ['tv'],
-       queryFn  : getTV,
-       initialData:datat,
-       refetchOnWindowFocus : false
-      }
-   )
   function handleMovieFlag()
   {
     setFlag({
@@ -49,7 +31,6 @@ const Carou = ({title,datam,datat,key}) => {
       "tv" : true 
     })
   }
-
   return (
 
     <div className=" h-[350px] w-full mb-28 mx-6" key={key}>
@@ -71,4 +52,4 @@ const Carou = ({title,datam,datat,key}) => {
   )
 }
 
-export default Carou
+export default Carou;

@@ -1,5 +1,7 @@
 import { moviebase,tvbase } from "./Options"
+
 export const url={
+    
     "Now Playing"    : {
          movie : {
 
@@ -48,13 +50,14 @@ export const url={
         movie : {
             keyword : "upcoming",
             route(){
-                return `${moviebase}/${this.keyword}`
+                return `${moviebase}/${this.keyword}/?language=en-US&page=2`
             },
         },
         tv    : {
             keyword : "on_the_air",
             route(){
-                return `${tvbase}/${this.keyword}`
+                return `${tvbase}/${this.keyword}/?language=en-US
+                &page=2`
             },
         },
     },

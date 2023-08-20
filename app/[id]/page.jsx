@@ -1,8 +1,8 @@
-import React from 'react'
 async function getById(id)
 {
     const res = await fetch()
 }
+
 const page = ({params}) => {
     const data  = getById(params.id)
     /**
@@ -12,9 +12,9 @@ const page = ({params}) => {
      * Similar Movies
      */
   return (
-    <div>
-      {params.id}
-    </div>
+      <div className='flex items-center justify-center'>
+        {params.id}
+      </div>
   )
 }
 

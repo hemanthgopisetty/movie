@@ -1,15 +1,17 @@
+import React from 'react'
 
 const page = () => {
   return (
     <div>
-      Movie
+      Hello
     </div>
   )
 }
 
 export default page
 
+
 /**
- * Need to add infintie scroll
+ * Infinte scrool for all the movies 
  * 
  */
