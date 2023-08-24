@@ -1,7 +1,6 @@
 import { nanoid } from 'nanoid';
-import { getMovie,getTV } from './QueryFN/getMoviesTv';
-import Carou from './components/Carou';
-
+import { getMovie,getTV } from '../../QueryFN/getMoviesTv';
+import Carou from '../CarouselComponent/Carou';
 const MovieTvWrapper = async () => {
  const {popularm,now_playingm,up_comingm,top_ratedm} = await getMovie();
  const {populart,now_playingt,up_comingt,top_ratedt} = await getTV();

@@ -1,8 +1,7 @@
 'use client'
 import { Carousel } from "@mantine/carousel"
 import Link from "next/link"
-import ImageComp from "./ImageComp"
-import { FcNext,FcPrevious } from "react-icons/fc";
+import ImageComp from "../ImageComponent/ImageComp"
 const CarouseComp = ({data,flag}) => {
 
   return (
@@ -15,22 +14,14 @@ const CarouseComp = ({data,flag}) => {
           draggable
           withKeyboardEvents
           withIndicators
-          nextControlIcon={
-          <FcNext size={25}  className="rounded-full bg-white/95 mr-2 "/>}
-          previousControlIcon={
-          <FcPrevious size={25}  className="rounded-full bg-white/95 ml-2 "/>}
-          styles={{
-           control : {
-             border : 'none',
-            },
-          }}
+          withControls={false}
            >
           {
 
          data.map((e)=>
           {
             return(
-             <Carousel.Slide  key={e.id}>
+             <Carousel.Slide  key={e.id}  >
               <div 
                 className="pt-2 flex flex-col gap-2 m-2"
               >

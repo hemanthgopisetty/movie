@@ -1,4 +1,4 @@
-import InfiniteScrool from "../components/InfiniteScrool";
+import InfiniteScrool from "../components/InfinteScroll/InfiniteScrool";
 import { url } from "../constants/URLS";
 const page = () => {
   const urll = url["Now Playing"].tv.route();

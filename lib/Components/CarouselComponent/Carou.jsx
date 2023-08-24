@@ -3,7 +3,6 @@ import { useState } from "react";
 import dynamic from "next/dynamic";
 import Indicator from "./Indicator";
 import ButtonCarousel from "./ButtonCarousel";
-
 const CarouseComp = dynamic(()=>import('./CarouseComp'),
   {
    ssr:false,
@@ -33,7 +32,7 @@ const Carou = ({title,datam,datat,key}) => {
   }
   return (
 
-    <div className=" h-[350px] w-full mb-28 mx-6" key={key}>
+    <div className=" h-[350px] w-full mb-36 mx-6" key={key}>
 
      <div className="flex justify-between w-full">
         <p className="text-2xl mx-2 px-2 text-white/80">{title}</p>

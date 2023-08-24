@@ -1,7 +1,8 @@
-import { options } from "./constants/Options"
-import { baseURL } from "./constants/ImageConstant";
-import Banner from "./components/Banner";
-import MovieTvWrapper from "./MovieTvWrapper";
+import { baseURL } from "@/lib/constants/ImageConstant";
+import { options } from "@/lib/constants/Options";
+import Banner from "../lib/Components/BannerComponent/Banner";
+import MovieTvWrapper from "../lib/Components/MovieTVComponent/MovieTvWrapper";
+
 
 async function getTrending()
 {

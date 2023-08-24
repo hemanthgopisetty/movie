@@ -1,19 +1,20 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
+
 const Header = () => {
   return (
-    <header className='text-xl text-white fixed flex items-center justify-between h-[60px] w-full z-10 backdrop-blur-[4px] bg-black/5'>
+    <header className='text-xl text-white fixed flex items-center justify-between h-[35px] w-full z-40 backdrop-blur-[4px] bg-black/5'>
           <nav className='w-full px-[20px] flex items-center justify-between '>
             <li className='list-none'>
-                <Link href={'/'}>
+                <Link href={'.'}>
                   <Image
-                    width={50} 
-                    height={50}
+                    width={40} 
+                    height={40}
                     alt='Movie'
                     priority
                     quality={100}
                     src="/Movie.png"
-                    className='absolute top-1 bottom-0 right-28 left-28 object-fill'
+                    className='mt-4 mx-8 object-fill'
                   />
                 </Link>
             </li>
@@ -27,6 +28,7 @@ const Header = () => {
               <li>
                 <Link href={'tv'}>TV Shows</Link>
               </li>
+              
               <li>
                 Account
               </li>
