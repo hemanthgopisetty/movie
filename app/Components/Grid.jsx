@@ -1,12 +1,13 @@
 import React from 'react'
-import ImageComp from '../ImageComponent/ImageComp';
+import ImageComp from './ImageComp';
 const Grid = ({data}) => {
   return (
     <div className="grid grid-cols-4 grid-flow-row-dense gap-9">
         {
-          data?.length===0?<p>Sorry</p>:data.map((e)=>{
+          data?.length===0?<span></span>:data.map((e)=>{
               return( 
-                  <div key={e.id}>
+                  <Link href={e.id}>
+                   <div key={e.id}>
                     <ImageComp  e={e} />
                     <div className="h-6 w-[200px] mt-2">
                     <p className="text-xl truncate text-white/50 h-full w-full ">
@@ -15,6 +16,7 @@ const Grid = ({data}) => {
                     </div>
                     <p className="text-white/80">{e.release_date}</p>
                   </div>
+                  </Link>
                  )
             }   
           )    

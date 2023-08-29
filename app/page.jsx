@@ -1,9 +1,7 @@
 import { baseURL } from "@/lib/constants/ImageConstant";
 import { options } from "@/lib/constants/Options";
-import Banner from "../lib/Components/BannerComponent/Banner";
-import MovieTvWrapper from "../lib/Components/MovieTVComponent/MovieTvWrapper";
-
-
+import Banner from "./Components/Banner";
+import MovieTvWrapper from "./Components/MovieTvWrapper";
 async function getTrending()
 {
   const url1 = 'https://api.themoviedb.org/3/trending/all/day' ;
@@ -20,7 +18,7 @@ export default async function Home() {
   return (
     <>
     <Banner bgimg={bgimg}/>
-      <MovieTvWrapper />
+    <MovieTvWrapper />
     </>
   )
 }

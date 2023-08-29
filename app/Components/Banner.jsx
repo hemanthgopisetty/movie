@@ -1,5 +1,5 @@
 import Image from "next/image";
-import InputHome from "../InputComponent/InputHome";
+import InputHome from "./InputHome";
 const Banner = ({bgimg}) => {
   return (
     <div className="w-full h-[450px] lg:h-[692px] flex items-center relative bg-slate-900">

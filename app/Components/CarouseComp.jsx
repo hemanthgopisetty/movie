@@ -1,7 +1,7 @@
 'use client'
 import { Carousel } from "@mantine/carousel"
 import Link from "next/link"
-import ImageComp from "../ImageComponent/ImageComp"
+import ImageComp from "./ImageComp"
 const CarouseComp = ({data,flag}) => {
 
   return (

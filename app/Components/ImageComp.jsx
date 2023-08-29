@@ -5,7 +5,7 @@ import { baseURL } from "@/lib/constants/ImageConstant"
 const ImageComp = ({e}) => {
     const [load,setLoad] = useState(true);
   return (
-    <div className="w-[250px] h-[350px] relative"> 
+    <div className="w-[235px] h-[300px] relative"> 
                   {
                    e.poster_path===undefined
                    ?
