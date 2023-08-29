@@ -22,6 +22,7 @@ const InfiniteScrool = ({url}) => {
   }
 
   useEffect(()=>{
+    console.log(inView)
     if(inView)
     {
       loadData();
@@ -29,7 +30,7 @@ const InfiniteScrool = ({url}) => {
   },[inView])
 
   return (
-    <>
+    <div key={1}>
       <Grid  data={data} key={nanoid(6)}/>
       <div
         className="flex justify-center items-center p-4 col-span-1 sm:col-span-2 md:col-span-3"
@@ -37,7 +38,7 @@ const InfiniteScrool = ({url}) => {
       >
         <CircularProgress size={20}/>
       </div>
-    </>
+    </div>
   )
 }
 
