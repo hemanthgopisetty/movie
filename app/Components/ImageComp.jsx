@@ -33,7 +33,8 @@ const ImageComp = ({e}) => {
                     quality={100}
                     alt="Movie Image"
                     sizes="(max-width: 1024px) 100vw,(max-width: 768px) 100vw,(max-width: 1440px) 100vw"
-                    className={`object-fill rounded-xl hover:opacity-75  hover:-translate-y-1 hover:shadow-lg hover:shadow-slate-400
+                    className={`
+                    object-cover rounded-xl duration-1000 ease-in-out group-hover:opacity-75 hover:opacity-75  hover:-translate-y-1 hover:shadow-lg hover:shadow-slate-400  
                      ${
                        load 
                        ? "scale-95 blur-2xl m-2 grayscale"

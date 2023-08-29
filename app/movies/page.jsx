@@ -2,13 +2,15 @@ import React from 'react'
 import { fetchall } from '@/lib/Actions/fetchall';
 import InfiniteScrool from '../Components/InfiniteScrool';
 import Grid from '../Components/Grid';
+import { url } from '@/lib/constants/URLS';
 const page = async () => {
-  const data = await fetchall(1);
+  const urlm = url['Now Playing'].movie.route();
+  const data = await fetchall(urlm,1);
   return (
     <div className='flex items-center justify-center w-full h-full'>
      <div className='flex items-center justify-center flex-col w-full h-full gap-2'>
       <Grid data={data}/>
-      <InfiniteScrool  />
+      <InfiniteScrool  url={urlm}/>
       </div>
     </div>
   )

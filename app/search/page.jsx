@@ -1,5 +1,6 @@
-import { options } from "../constants/Options";
-import ImageComp from "../components/ImageComp/ImageComp";
+import { options } from "@/lib/constants/Options";
+import ImageComp from "../Components/ImageComp";
+
 const getSearch = async (q)=>{
  const res = await fetch(`https://api.themoviedb.org/3/search/multi?query=${q}`,options);
  const data = await res.json();
