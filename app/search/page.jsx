@@ -11,7 +11,9 @@ const page = async ({searchParams}) => {
   const data =await getSearch(decoded);
   return (
     <div className="flex flex-col gap-2 text-white mt-24 ">
-      <p className="mx-24 text-2xl font-bold mb-3">Search Results for " {searchParams.q} "</p>
+      <p className="mx-24 text-2xl font-bold mb-3">
+        Search Results for <q>{searchParams.q}</q>
+      </p>
       <div className='flex items-center justify-center'>
       <div className="grid grid-cols-4 grid-flow-row-dense gap-9">
       {data?.length===0?<p>Sorry</p>:data.map((e)=>{
