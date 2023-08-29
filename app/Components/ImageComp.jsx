@@ -7,7 +7,7 @@ const ImageComp = ({e}) => {
   return (
     <div className="w-[235px] h-[300px] relative"> 
                   {
-                   e.poster_path===undefined
+                   e.poster_path===undefined || e.poster_path===null
                    ?
                    <Image 
                     src="/no-poster.png"
